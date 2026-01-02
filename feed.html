@@ -2928,7 +2928,7 @@
                                     </button>
                                 </div>
                                 <div style="display: flex; flex-direction: column; gap: 8px;">
-                                    ${post.caption ? `<p class="caption-container" data-full-caption="%24%7bpost.caption.replace(/index.html"/g, '&quot;').replace(/\n/g, '[BR]')}" data-expanded="false" style="font-size: 14px; color: #F9F9F9; margin: 0; line-height: 1.4;"><span style="font-weight: 600;">${post.username}</span> ${post.caption.length > 80 ? post.caption.substring(0, 80).replace(/\n/g, ' ').trim() + '...' : post.caption.replace(/\n/g, '<br>')}${post.caption.length > 80 ? ` <span class="show-more-btn" style="color: rgb(156, 163, 175); cursor: pointer;">mais</span>` : ''}</p>` : ''}
+                                    ${post.caption ? `<p class="caption-container" data-full-caption="${post.caption.replace(/"/g, '&quot;').replace(/\n/g, '[BR]')}" data-expanded="false" style="font-size: 14px; color: #F9F9F9; margin: 0; line-height: 1.4;"><span style="font-weight: 600;">${post.username}</span> ${post.caption.length > 80 ? post.caption.substring(0, 80).replace(/\n/g, ' ').trim() + '...' : post.caption.replace(/\n/g, '<br>')}${post.caption.length > 80 ? ` <span class="show-more-btn" style="color: rgb(156, 163, 175); cursor: pointer;">mais</span>` : ''}</p>` : ''}
                                     ${relativeTime ? `<p style="font-size: 12.32px; color: rgb(156, 163, 175); margin: 0;">${relativeTime}</p>` : ''}
                                 </div>
                             </div>
